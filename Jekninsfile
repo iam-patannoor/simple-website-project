@@ -1,1 +1,12 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Deploy webiste') {
+            steps {
+                echo 'Deploying the website files....'
+                sh 'mkdir -p /home/ubuntu/website && cp index.html /home/ubuntu/website/index.html'
+                  }
+}
+}
+}
 
